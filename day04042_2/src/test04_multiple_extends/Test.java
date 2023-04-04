@@ -2,14 +2,14 @@ package test04_multiple_extends;
 
 public class Test {
 	public static void main(String[] args) {
-		
-		Duck d = new Duck();
-		Eagle e = new Eagle();
-		
-		// d. => fly, swim, hunt 가능 
-		
 		// 다형성
-		AbleToFly f = d;
-		// f. => fly만 사용 가능 
-	}
+		DuckInterface d1 = new Duck();
+		DuckInterface d2 = new UglyDuckling();
+		DuckInterface d3 = new DonaldDuck();
+	
+		d1.playInnocent(); // 오리발을 내밀어요.
+		d2.playInnocent(); // 저는 오리가 아닐걸요?
+		d3.playInnocent(); // 저는 진짜 오리가 아니예요!
+		
+	}	
 }

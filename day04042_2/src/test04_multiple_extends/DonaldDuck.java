@@ -1,7 +1,12 @@
 package test04_multiple_extends;
 
-//public class Duck implements AbleToFly, AbleToSwim, AbleToHunt {
-public class Duck implements DuckInterface {
+public class DonaldDuck implements DuckInterface{
+
+	@Override
+	public void fly() {
+		// TODO Auto-generated method stub
+		
+	}
 
 	@Override
 	public void hunt() {
@@ -16,14 +21,8 @@ public class Duck implements DuckInterface {
 	}
 
 	@Override
-	public void fly() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
 	public void playInnocent() {
-		System.out.println("오리발을 내밀어요.");
+		System.out.println("저는 진짜 오리가 아니예요!");
 		
 	}
 
