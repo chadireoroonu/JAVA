@@ -15,7 +15,6 @@ public class Computer implements HdmiInput {
 	public void show() {
 		System.out.println("컴퓨터 화면을");
 		outputDevice.output();
-		
 	}
 
 }
